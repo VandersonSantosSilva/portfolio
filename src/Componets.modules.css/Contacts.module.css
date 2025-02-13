@@ -1,0 +1,51 @@
+.Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+.ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.ContainerList{
+    border: solid 2px green;
+    width: 45%;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.Dark{
+    border: solid 2px green;
+    width: 45%; 
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #13131f;
+}
+
+
+@media (max-width: 768px) {
+    .ContainerList{
+        width: 80%; 
+    }
+
+    .Dark{
+      width: 80%;
+    }
+}
+
+.ico{
+    font-size: 50px;
+}

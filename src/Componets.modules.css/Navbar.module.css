@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+a{
+    text-decoration: none;
+    color: var(--color01);
+}
+
+.Container{
+    background-image: linear-gradient(to top, var(--color05), #101031);
+    color: var(--color01);
+    padding: 15px;
+    border-bottom: solid 2px var(--color02);
+    
+}
+
+.LogoTipo{
+    max-width: 100px;
+    float: left;
+}
+
+.ulList{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    text-decoration: none;
+}
+
+.menuHambuguer{
+    display: none;
+}
+
+.liList{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+.liList:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+    color: var(--color02);
+}
+
+.darkNav{
+    border-bottom: solid 2px var(--color06)!important;
+
+}
+
+.buttonMenu{
+    display: none;
+}
+
+.buttonMenu2{
+    display: none;
+}
+
+.General{
+    z-index: 1000;
+}
+
+
+
+@media screen and (max-width: 1050px){
+
+    .menuHambuguer{
+        display: block;
+        margin-bottom: 15px;
+        font-size: 10px;
+        background-color: transparent;
+        border: none;
+        color: var(--color02);
+    }
+
+    .menuHambuguer:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+
+    .Container{
+        display: none;
+    }
+
+    .ContainerTwo{
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 15px 0px 15px;
+        border-bottom: solid 2px var(--color02);
+        border-left: solid 2px var(--color02);
+        border-top: solid 2px var(--color02);;
+        width: 40%;
+        height: 80vh;
+        position: fixed;
+        z-index: 1000;
+        margin-left: auto;
+        top: 7%;
+        right: 0;
+        padding-top: 0;
+        background-color: var(--color05);
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .ulList{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 0%;
+        line-height: 700%;
+    }
+
+    .liList{
+        margin-bottom: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+    }
+
+    .General{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        margin-right: 20px;
+        position: fixed;
+        right: 0;
+        top: 50px;
+    }
+
+    .buttonMenu{
+        display: block;
+        text-decoration: none;
+        font-size: 25px;
+        color: var(--color02);
+        background: transparent;
+        border: none;
+        position: absolute;
+        right: -20px;
+    }
+
+    .buttonMenu2{
+        display: block;
+        text-decoration: none;
+        font-size: 25px;
+        background: transparent;
+        border: none;
+        color: var(--color06);
+    }
+
+    .hamburgueOC{
+        display: none;
+        overflow: hidden;
+    }
+}

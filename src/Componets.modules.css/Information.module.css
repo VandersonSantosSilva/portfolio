@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+/*start dark mode*/
+.night{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: transparent;
+    border: solid 2px var(--color02);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 10px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: var(--color02);
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 2px;
+
+    height: 18px;
+    width: 18px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.sun{
+    font-size: 13px;
+    color: var(--color04);
+}
+
+.moon{
+    font-size: 13px;
+    color: var(--color03);
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(38px);
+}
+
+.dark{
+    color: var(--color05)!important;
+    font-weight: bolder!important;
+}
+
+.darkTwo{
+    color: var(--color06)!important;
+}
+
+.darkThree{
+    border: solid 2px var(--color06)!important;
+}
+
+.darkFuor{
+    background-color: var(--color06)!important;
+}
+
+
+/*end dark mode*/
+
+/*start title*/
+.title{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.caixaText{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 20em;
+    overflow: hidden;
+}
+
+.textOne{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: var(--color01);
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.textTwo{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color02);
+    font-size: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.textThree{
+    font-family: 'Goldman', cursive;
+    color: var(--color01);
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.show{
+    opacity: 1; 
+    animation: showAnimate 1.3s normal;
+}
+
+.buttons button{
+    background-color: transparent;
+    border: solid 2px var(--color06) ;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bolder;
+    color: var(--color02);
+    width: 50%;
+    margin: 5px;
+
+}
+
+.buttons button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.buttons button a{
+    color: var(--color02);
+}
+
+
+
+/*end title*/
+
+/*start animation*/
+
+.typingAnimationOne{
+    animation: typingOne 5s steps(80) normal;
+}
+
+.typingAnimationTwo{
+    animation: typingTwo 5s steps(80) 2s normal,
+    fede-in 1s 2s normal forwards;
+    opacity: 0;
+}
+
+.typingAnimationThree{
+    animation: typingThree 5s steps(80) 5s normal,
+    fede-in 1s 5s normal forwards;
+    opacity: 0;
+}
+
+.imgTitle{
+    animation: animationImg 1s 9s normal,
+    animationImge 1s 10s normal;
+}
+
+
+@keyframes typingOne {
+    from {
+        width: 0;
+    }
+    to {
+        width: 18em;
+    }
+
+}
+
+@keyframes typingTwo {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15em;
+    }
+}
+
+@keyframes typingThree {
+    from{
+        width: 0;
+    }
+    to{
+        width: 18em;
+    }
+}
+
+@keyframes fede-in {
+    from {
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes animationImg {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes animationImge {
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes showAnimate {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+
+/*end animation*/
+
+/*start sobre*/
+.containerSobre{
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    max-width: 80%;
+}
+
+.titleH1{
+    font-family: 'Poppins', sans-serif; 
+    color: var(--color02);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.paragrafos{
+    font-family: 'Roboto Slab', serif;
+    margin-top: 3%;
+    font-size: 16px;
+    color: var(--color01);
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+/*end sobre*/
+
+/*start carousel habilidades*/
+.containerHabilidades{
+    position: relative;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+    max-width: 60%;
+}
+
+.list{
+    list-style: none;
+    color: var(--color01);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+    margin-top: 5%;
+}
+
+.list li {
+    border: solid 2px var(--color02);
+    animation: float 2s ease-in-out infinite;
+    display: inline-block;
+    padding: 15px;
+    width: 80px;
+    min-height: 60px;
+    border-radius: 30px 0px 0px 0px;
+    margin: 15px;
+    background: var(--color05);
+    font-family: 'Poppins', sans-serif; 
+}
+
+.list li i{
+    display: block;
+    color: rgb(28, 122, 64);
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+span{
+    color: var(--color02);
+}
+
+.containerText{
+    margin: auto;
+    text-align: center;
+    max-width: 80%;
+}
+
+.inner{
+    display: flex;
+}
+
+.imgs{
+    min-height: 200px;
+    min-width: 200px;
+    padding: 14px;
+}
+
+.imgs img{
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    pointer-events: none;
+    border: solid 2px #226d2e;
+    box-shadow: 5px 5px 10px #1eff0034;
+}
+
+
+.carousel{
+    cursor: grab;
+    overflow: hidden;
+    margin-top: 3%;
+}
+
+/*end carousel habilidades*/
+
+@media screen and (max-width: 899px){
+    
+    .night{
+        margin-top: 5%;
+    }
+
+    .label{
+        height: 5px;
+        width: 30px;
+    }
+
+    .label .ball{
+        background-color: var(--color02);
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 2px;
+    
+        height: 13px;
+        width: 13px;
+    
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+    }
+
+    .moon{
+        font-size: 10px;
+        color: var(--color03);
+    }
+    
+    .sun{
+        font-size: 10px;
+        color: var(--color04);
+    }
+
+    .checkbox:checked + .label .ball{
+        transform: translateX(25px);
+    }
+
+
+    .title{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-top: 15%;
+        max-width: 90%;
+    }
+
+    .titleH1{
+        font-size: 25px;
+    }
+
+    .caixaText{
+        display: flex;
+        max-width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .imgTitle{
+        max-width: 150px;
+        margin-bottom: 8%;
+    }
+
+    .textThree{
+        font-size: 1.2em;
+    }
+
+    .containerSobre{
+        margin: auto;
+        margin-top: 20%;
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .paragrafos{
+        text-align: left;
+        margin-top: 10%;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+    .containerHabilidades{
+        margin-top: 10%;
+        max-width: 90%;
+        z-index: 1;
+    }
+
+    .containerText{
+        text-align: left;
+        margin-top: 5%;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+    .carousel{
+        margin-top: 10%;
+    }
+
+    .buttons{
+        flex-wrap: wrap;
+    }
+
+    .buttons button{
+        min-width: 80%!important;
+    }   
+
+}
+/*end @media screen*/

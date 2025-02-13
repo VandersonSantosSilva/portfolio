@@ -1,0 +1,68 @@
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, var(--color05), #101031);
+    color: var(--color06);
+    text-align: center;
+    margin-top: 2px;
+    border-top: solid 2px var(--color02);
+}
+
+.footer button{
+    margin-bottom: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: transparent;
+    border: solid 2px var(--color06) ;
+    padding: 10px;
+    border-radius: 15px 0px 0px 0px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bolder;
+    color: var(--color02);
+}
+
+.buttonDW{
+    margin-top: 15px!important;
+    margin-bottom: 15px!important;
+
+}
+
+.containerFooter{
+    display: block!important;
+    margin-top: 5px;
+    color: var(--color02);
+}
+
+.footer button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 10px 5px 20px #1eff0034;
+    transition: 0.5s;
+}
+
+.divSpanFooter{
+  width: 100%;
+}
+
+@media screen and (max-width: 799px){
+
+    .footer button{
+        background-color: transparent;
+        border: solid 2px var(--color06) ;
+        padding: 7px;
+        border-radius: 15px 0px 0px 0px;
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif; 
+        font-weight: bolder;
+        color: var(--color02);
+        margin-top: 15%;
+        max-width: 100px;
+    }
+
+    .containerFooter{
+        font-size: 14px;
+    }
+}
