@@ -97,7 +97,7 @@ function Projetos(){
 
             <div className={Styles.ContainerVT}>
 
-                <iframe className={Styles.Video} src={clickDados.Video}></iframe>
+                <iframe  allow="fullscreen" allowFullScreen height="644" className={Styles.Video} src={clickDados.Video}></iframe>
 
                 <div className={Styles.Text}>
                   <h4>{clickDados.Techs}</h4>
